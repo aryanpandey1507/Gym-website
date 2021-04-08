@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskari Fitness Club</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<style>
+    /*css reset*/
+    body{
+        margin: 0px;
+        color:white;
+        padding: 0px;
+        background: url('img/bge.jpg'); /*always try to download 1920x1080 dim photos*/
+        background-size: cover;
+        background-position: ;
+        /*font-family: 'New Tegomin', serif;*/
+        font-family: 'Montserrat Alternates', sans-serif ;
+
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid green; */
+        position: absolute;
+        top: 37px;
+        left: 34px;
+
+    }
+    .mid{
+        display: block;
+        width :76%;
+        margin: 20px auto;
+        /* border: 2px solid yellow; */
+
+    }
+    .right{
+        /* border: 2px solid blue; */
+        display: inline-block;
+        right: 34px;
+        top: 45px;
+        position: absolute; /*relative to the parent -here it is header*/
+        
+
+    }
+    .navbar{
+        display: inline-block;
+        
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 30px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none ;
+        padding: 40px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        color:#863d3d;
+        text-decoration: underline ;
+        
+    }
+    .left img{
+        width: 111px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+        line-height: 6px;
+        font-size:16px
+    }
+    .btn{
+        margin: 0px 1px;
+        background-color: black;
+        color: white;
+        padding: 3px 15px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+        font-family: 'New Tegomin', serif;
+    }
+    .btn:hover{
+             color:#863d3d;   
+             background-color: white;   
+    }
+    .container{
+        margin: 123px 20px;
+        padding: 110px;
+        width: 33%;
+        border-radius: 30px;
+        top: 10px;
+        
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 500px;
+        border: 2px solid black;
+        padding: 5px;
+        margin: 12px auto;
+        font-size: 18px;
+        border-radius: 23px;
+        font-family:'Manrope', serif;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+         width: 23%;
+         margin: auto;
+    }
+    #feed{
+        margin: 2px 30px;
+        width: 490px;
+    }
+    #g1{
+        width: 300px;
+        margin: 20px ;
+        display: inline;
+
+        /* border: 2px solid white; */
+       
+    }
+    fieldset{
+        border: 2px solid white;
+        border-radius: 23px;
+        font-family:'Merriweather', serif;
+        width: 488px;
+        height: 44px;
+        margin-left: -1px;
+    }
+    #male{
+        padding: 34px;
+    }
+    #female{
+        padding: 34px;
+    }
+    #other{
+        padding: 34px;
+    }
+    #weightloss{
+        padding: 21px;
+    }
+    #musclegain{
+        padding: 30px;
+    }
+    #yoga{
+        padding: 30px;
+    }
+    #remarks{
+        margin-top: 20px;
+        width: 490px;
+        border-radius: 23px;
+        margin-left: -22px;
+    }
+    #rw{
+       
+        margin-left: 30px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img/logor.png">
+            <div>Sanskari Fitness Club</div>
+        </div>
+         <!--mid box for navigation-->
+        <div class="mid">
+            <ul class="navbar">
+                   <li><a href="#" class="active">Home</a></li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Nearby Centers</a></li>
+                   <li><a href="#">Contact Us</a></li>
+            </ul>
+         </div>
+        <!--Right box for buttons-->
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">Our Members</button>
+        </div>
+    </header>
+    <div class="container">
+    <h1>Join by filing the form</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="Name" placeholder="Enter your Name">
+        </div>
+        <fieldset>
+            <legend>Gender</legend>
+               <div id="g1">
+                <span id="male"> Male <input type="radio" name="my gender" ></span> <span id="female"> Female <input type="radio" name="my gender"
+                > </span> <span id="other">Other<input type="radio" name="my gender" ></span>
+               </div>
+        </fieldset>
+        <div class="form-group" >
+            <input type="number" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <fieldset>
+            <legend>Program to join</legend>
+               <div id="g1">
+                <span id="weightloss"> Weight loss <input type="radio" name="my gender" ></span> <span id="musclegain"> Muscle Gain <input type="radio" name="my gender"
+                > </span> <span id="yoga">Yoga<input type="radio" name="my gender" ></span>
+               </div>
+        </fieldset>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Disease (if any)">
+        </div>
+        <div class="form-group" id="remarks">
+           <span id="rw">Remarks</span><textarea name="Comment down the feedback" id="feed" cols="60" rows="5"></textarea>
+        </div>
+    </form>
+    <button class="btn">Join</button>
+    </div>
+</body>
+</html>  
